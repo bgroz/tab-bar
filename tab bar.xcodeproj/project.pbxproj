@@ -11,10 +11,12 @@
 		131073F51EB3DE810047F53C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131073F41EB3DE810047F53C /* ViewController.swift */; };
 		131073F81EB3DE810047F53C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131073F61EB3DE810047F53C /* Main.storyboard */; };
 		131073FB1EB3DE810047F53C /* tab_bar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 131073F91EB3DE810047F53C /* tab_bar.xcdatamodeld */; };
-		131073FD1EB3DE810047F53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131073FC1EB3DE810047F53C /* Assets.xcassets */; };
 		131074001EB3DE810047F53C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131073FE1EB3DE810047F53C /* LaunchScreen.storyboard */; };
 		1310740B1EB3DE820047F53C /* tab_barTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1310740A1EB3DE820047F53C /* tab_barTests.swift */; };
 		131074161EB3DE820047F53C /* tab_barUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131074151EB3DE820047F53C /* tab_barUITests.swift */; };
+		133F328F1EB8223700A45EBE /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F328E1EB8223600A45EBE /* CategoryRow.swift */; };
+		133F32911EB823B700A45EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133F32901EB823B700A45EBE /* Assets.xcassets */; };
+		133F32931EB829BB00A45EBE /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F32921EB829BB00A45EBE /* CustomCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		131073F41EB3DE810047F53C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		131073F71EB3DE810047F53C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		131073FA1EB3DE810047F53C /* tab_bar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tab_bar.xcdatamodel; sourceTree = "<group>"; };
-		131073FC1EB3DE810047F53C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		131073FF1EB3DE810047F53C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		131074011EB3DE810047F53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		131074061EB3DE810047F53C /* tab barTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tab barTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +50,9 @@
 		131074111EB3DE820047F53C /* tab barUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tab barUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		131074151EB3DE820047F53C /* tab_barUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab_barUITests.swift; sourceTree = "<group>"; };
 		131074171EB3DE820047F53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		133F328E1EB8223600A45EBE /* CategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		133F32901EB823B700A45EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		133F32921EB829BB00A45EBE /* CustomCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				131073F21EB3DE810047F53C /* AppDelegate.swift */,
+				133F328E1EB8223600A45EBE /* CategoryRow.swift */,
 				131073F41EB3DE810047F53C /* ViewController.swift */,
+				133F32921EB829BB00A45EBE /* CustomCollectionCell.swift */,
+				133F32901EB823B700A45EBE /* Assets.xcassets */,
 				131073F61EB3DE810047F53C /* Main.storyboard */,
-				131073FC1EB3DE810047F53C /* Assets.xcassets */,
 				131073FE1EB3DE810047F53C /* LaunchScreen.storyboard */,
 				131074011EB3DE810047F53C /* Info.plist */,
 				131073F91EB3DE810047F53C /* tab_bar.xcdatamodeld */,
@@ -196,6 +202,7 @@
 				TargetAttributes = {
 					131073EE1EB3DE810047F53C = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Z97P9ME524;
 						ProvisioningStyle = Automatic;
 					};
 					131074051EB3DE810047F53C = {
@@ -236,7 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				131074001EB3DE810047F53C /* LaunchScreen.storyboard in Resources */,
-				131073FD1EB3DE810047F53C /* Assets.xcassets in Resources */,
+				133F32911EB823B700A45EBE /* Assets.xcassets in Resources */,
 				131073F81EB3DE810047F53C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				131073FB1EB3DE810047F53C /* tab_bar.xcdatamodeld in Sources */,
+				133F32931EB829BB00A45EBE /* CustomCollectionCell.swift in Sources */,
 				131073F51EB3DE810047F53C /* ViewController.swift in Sources */,
+				133F328F1EB8223700A45EBE /* CategoryRow.swift in Sources */,
 				131073F31EB3DE810047F53C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z97P9ME524;
 				INFOPLIST_FILE = "tab bar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugraoz.tab-bar";
@@ -430,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z97P9ME524;
 				INFOPLIST_FILE = "tab bar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugraoz.tab-bar";
@@ -511,6 +522,7 @@
 				1310741C1EB3DE820047F53C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1310741D1EB3DE820047F53C /* Build configuration list for PBXNativeTarget "tab barTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +531,7 @@
 				1310741F1EB3DE820047F53C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		131074201EB3DE820047F53C /* Build configuration list for PBXNativeTarget "tab barUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +540,7 @@
 				131074221EB3DE820047F53C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
