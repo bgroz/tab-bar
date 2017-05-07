@@ -15,6 +15,7 @@ class ViewController: UIViewController , UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let navigationBar = UINavigationBar()
         navigationBar.topItem?.title = "New Title"
         
@@ -41,6 +42,8 @@ class ViewController: UIViewController , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CategoryRow
+        
+        
         
         return cell
     }

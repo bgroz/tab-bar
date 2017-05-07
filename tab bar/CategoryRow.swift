@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CategoryRow: UITableViewCell {
+class CategoryRow: UITableViewCell  {
     
     let images = ["L1","L2","L3","K4","K5","K6"]
     
@@ -30,6 +30,10 @@ extension CategoryRow: UICollectionViewDataSource , UICollectionViewDelegateFlow
         cell.layer.borderWidth = 1.0
         cell.CustomImageView.image = UIImage(named: images[indexPath.row])
         
+        
+        
+        
+        
         return cell
     }
     
@@ -40,5 +44,20 @@ extension CategoryRow: UICollectionViewDataSource , UICollectionViewDelegateFlow
 //        let itemHeight = collectionView.bounds.height - (2 * hardCodePadding)
         return CGSize(width: 200, height: 200)
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! CustonCollectionCell
+        cell.layer.borderWidth = 1.0
+        cell.CustomImageView.image = UIImage(named: images[indexPath.row])
+        
+        if cell.CustomImageView.image == #imageLiteral(resourceName: "L1"){
+            if let vc3 = UIStoryboard.init(name:"Main" ,bundle:nil).instantiateViewController(withIdentifier: "LevelVC") as? Level1CollectionViewController{
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window?.rootViewController!.present(vc3 , animated:  true, completion: nil)
+                
+            }
+        }
+    }
+    
+   
     
 }
