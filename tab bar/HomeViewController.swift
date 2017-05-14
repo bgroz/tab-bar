@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController , UITableViewDataSource {
+class HomeViewController: UIViewController , UITableViewDataSource {
     
     var categories = ["Beginner", "Elementary", "Intermadiate", "Advanced"]
     override func viewDidLoad() {
@@ -42,18 +42,17 @@ class ViewController: UIViewController , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CategoryRow
-        
-        
-        
+        cell.delegate = self
         return cell
     }
     
 }
 
-
-
-
-
+extension HomeViewController: CategoryRawDelegate {
+    func didTapCategoryRaw(for cell: CategoryRow) {
+        self.performSegue(withIdentifier: "ShowLevel1CollectionVC", sender: nil)
+    }
+}
 
 
 

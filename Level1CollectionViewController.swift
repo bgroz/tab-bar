@@ -12,156 +12,172 @@ private let reuseIdentifier = "Cell"
 
 class Level1CollectionViewController: UICollectionViewController , UITextFieldDelegate {
     
-    
-    var backImage = UIImage(named: "kapaticon")
-    let limitLength = 1
-    var saybak = 0
-    
-    
-    var letterArray = ["A","P","P","L","E"]
-    
-
-    
+    var words: [WordModel] = []
+    var currentWord: String?
+    var characters: [Character] = []
+    var selectedCharacters: [String] = []
+    var textFields: [UITextField] = []
+    var labelQuestion: UILabel?
+    var resultTextField: UITextField?
+    var buttonCompare: UIButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        createDatasource()
         
-        self.collectionView?.cellForItem(at: IndexPath.init(row: 0, section: 0))?.becomeFirstResponder()
+        currentWord = words.first?.answer
+        characters = Array(currentWord!.characters)
         
+        for (index, current) in characters.enumerated() {
+            let textField = UITextField(frame: CGRect(x: 1, y: 1, width: 30, height: 27))
+            textField.tag = index
+            textField.delegate = self
+            textField.backgroundColor = .white
+            textField.textAlignment = .center
+            textField.text = String(current)
+            textField.textColor = .clear
+            textField.textAlignment = .center
+            textField.isUserInteractionEnabled = false
+            textFields.append(textField)
+        }
         
-        //        self.collectionView!.delegate = self
+        configureViews()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(Level1CollectionViewController.didTapNext))
+        
         self.collectionView?.dataSource = self
-        // Register cell classes
+        self.collectionView?.delegate = self
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        backButton()
-        
         self.collectionView?.reloadData()
-        // Do any additional setup after loading the view.
     }
-    func backButton(){
-        
-        let backBtn = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.plain, target: self, action: #selector(Level1CollectionViewController.goBack))
-        navigationItem.title = "Level 1"
-        navigationItem.leftBarButtonItem = backBtn
-        
-    }
-    
-    
-    func goBack(){
-        dismiss(animated: true, completion: nil)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        //auto selected 1st item
-        
-    }
-    
-    
-    
     
     // MARK: UICollectionViewDataSource
-    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 10
+        return 1
     }
     
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 10
+        return textFields.count
     }
-    
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        
-        let txtField2 = UITextField(frame: CGRect(x: 1, y: 1, width: 30, height: 27))
-    
-        
-        txtField2.delegate = self
-        
-      
-        DispatchQueue.main.async {
-            txtField2.backgroundColor = .blue
-            txtField2.autocapitalizationType = .allCharacters
-            txtField2.autocorrectionType = .no
-            txtField2.textAlignment = .center
-            txtField2.keyboardType = .alphabet
-            txtField2.tintColor = .clear
-            cell.addSubview(txtField2)
-        }
-        
-        
-        if(indexPath.item == 0 && indexPath.row == 0 && saybak == 0){
-            txtField2.becomeFirstResponder()
-            saybak += 1
-        }
-        
-       
-        
-        
-        
+        cell.addSubview(textFields[indexPath.row])
         return cell
     }
     
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
-                   replacementString string: String) -> Bool
-    {
-        
-        let maxLength = 1
-        let currentString: NSString = textField.text! as NSString
-        let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
-        
-//        var indexes = letterArray.enumerated().filter {
-//            $0.element.contains(textField.text!)
-//            }.map{$0.offset}
-        
-        if letterArray.{
-            print("OK")
-        }
-        
-        
-        
-        return newString.length <= maxLength
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard selectedCharacters.count <= Int((currentWord?.characters.count ?? 0) / 2) else { return }
+        textFields[indexPath.row].textColor = .black
+        selectedCharacters.append(textFields[indexPath.row].text ?? "")
     }
-    
-   
-    
-    
-    // MARK: UICollectionViewDelegate
-    
-    /*
-     // Uncomment this method to specify if the specified item should be highlighted during tracking
-     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-     return true
-     }
-     */
-    
-    /*
-     // Uncomment this method to specify if the specified item should be selected
-     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-     return true
-     }
-     */
-    
-    /*
-     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-     override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-     return false
-     }
-     
-     override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-     return false
-     }
-     
-     override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-     
-     }
-     */
-    
 }
 
-
+extension Level1CollectionViewController {
+    fileprivate func configureViews() {
+        let screenWidth = UIApplication.shared.keyWindow?.bounds.size.width ?? 0
+        
+        labelQuestion = UILabel(frame: CGRect(x: 30, y: 0, width: screenWidth - 60, height: 45))
+        labelQuestion?.textAlignment = .center
+        labelQuestion?.textColor = .white
+        labelQuestion?.font = .systemFont(ofSize: 14)
+        labelQuestion?.center.x = view.center.x
+        labelQuestion?.center.y = view.center.y - 200
+        labelQuestion?.text = words.first?.question
+        labelQuestion?.numberOfLines = 0
+        view.addSubview(labelQuestion!)
+        
+        resultTextField = UITextField(frame: CGRect(x: 30, y: 0, width: screenWidth - 60, height: 45))
+        resultTextField?.placeholder = "Guess what is it?"
+        resultTextField?.center.x = view.center.x
+        resultTextField?.center.y = view.center.y - 100
+        resultTextField?.backgroundColor = .white
+        view.addSubview(resultTextField!)
+        
+        buttonCompare = UIButton(frame: CGRect(x: 30, y: 0, width: screenWidth - 60, height: 45))
+        buttonCompare?.backgroundColor = .blue
+        buttonCompare?.setTitle("Check it", for: .normal)
+        buttonCompare?.addTarget(self, action: #selector(Level1CollectionViewController.didTapCompareButton), for: .touchUpInside)
+        buttonCompare?.center.x = view.center.x
+        buttonCompare?.center.y = view.center.y
+        view.addSubview(buttonCompare!)
+    }
+    
+    func didTapNext() {
+        if let oldIndex = words.index(where: { $0.answer == currentWord }), oldIndex + 1 < words.count {
+            let nextWord = words[oldIndex + 1]
+            buttonCompare?.isEnabled = true
+            buttonCompare?.alpha = 1.0
+            resultTextField?.isEnabled = true
+            resultTextField?.backgroundColor = .white
+            labelQuestion?.text = nextWord.question
+            currentWord = nextWord.answer
+            characters = Array(currentWord!.characters)
+            textFields.removeAll()
+            for (index, current) in characters.enumerated() {
+                let textField = UITextField(frame: CGRect(x: 1, y: 1, width: 30, height: 27))
+                textField.tag = index
+                textField.delegate = self
+                textField.backgroundColor = .white
+                textField.textAlignment = .center
+                textField.text = String(current)
+                textField.textColor = .clear
+                textField.isUserInteractionEnabled = false
+                textFields.append(textField)
+            }
+            textFields.forEach { $0.textColor = .clear }
+            collectionView?.reloadData()
+        } else {
+            navigationItem.rightBarButtonItem = nil
+            buttonCompare?.isEnabled = false
+            resultTextField?.isEnabled = false
+            resultTextField?.backgroundColor = .gray
+            buttonCompare?.alpha = 0.5
+            labelQuestion?.text = "Finished!"
+            characters.removeAll()
+            textFields.removeAll()
+            collectionView?.reloadData()
+        }
+        resultTextField?.text?.removeAll()
+        selectedCharacters.removeAll()
+    }
+    
+    func didTapCompareButton() {
+        let resultText = textFields.reduce("") { (resultText, textField) -> String in
+            var result = resultText
+            result += textField.text ?? ""
+            return result
+        }.lowercased()
+        
+        if resultText == (resultTextField?.text)?.lowercased() {
+            let alertController = UIAlertController(title: "Congrats!", message: "Correct answer 👏", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { [weak self] action in
+                self?.resultTextField?.text?.removeAll()
+                self?.didTapNext()
+            }))
+            present(alertController, animated: true, completion: nil)
+        } else {
+            let alertController = UIAlertController(title: "Unfortunatelly wrong!", message: "Wrong Answer 😟", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { [weak self] action in
+                self?.resultTextField?.text?.removeAll()
+            }))
+            present(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    func createDatasource() {
+        let wordModel = WordModel.init(question: "It is a city", answer: "İstanbul")
+        words.append(wordModel)
+        let wordModel2 = WordModel.init(question: "It is a fruit", answer: "Armut")
+        words.append(wordModel2)
+        let wordModel3 = WordModel.init(question: "It is eaten on summer", answer: "Dondurma")
+        words.append(wordModel3)
+        let wordModel4 = WordModel.init(question: "it is a communication tool", answer: "Telefon")
+        words.append(wordModel4)
+        let wordModel5 = WordModel.init(question: "It is an animal", answer: "Aslan")
+        words.append(wordModel5)
+    }
+}

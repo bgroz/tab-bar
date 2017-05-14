@@ -9,13 +9,15 @@
 import Foundation
 import UIKit
 
+protocol CategoryRawDelegate: class {
+    func didTapCategoryRaw(for cell: CategoryRow)
+}
+
 class CategoryRow: UITableViewCell  {
     
-    let images = ["L1","L2","L3","K4","K5","K6"]
+    let images = ["L1","L2","L3","L4","L5"]
     
-    
-    
-    
+    weak var delegate: CategoryRawDelegate?
 }
 
 extension CategoryRow: UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
@@ -48,14 +50,18 @@ extension CategoryRow: UICollectionViewDataSource , UICollectionViewDelegateFlow
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! CustonCollectionCell
         cell.layer.borderWidth = 1.0
         cell.CustomImageView.image = UIImage(named: images[indexPath.row])
+        delegate?.didTapCategoryRaw(for: self)
         
-        if cell.CustomImageView.image == #imageLiteral(resourceName: "L1"){
-            if let vc3 = UIStoryboard.init(name:"Main" ,bundle:nil).instantiateViewController(withIdentifier: "LevelVC") as? Level1CollectionViewController{
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            appDelegate.window?.rootViewController!.present(vc3 , animated:  true, completion: nil)
-                
-            }
-        }
+        
+//        if  cell.CustomImageView.image == #imageLiteral(resourceName: "L1"){
+//            if let vc3 = UIStoryboard.init(name:"Main" ,bundle:nil).instantiateViewController(withIdentifier: "LevelVC") as? Level1CollectionViewController{
+//            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//            appDelegate.window?.rootViewController!.present(vc3 , animated:  true, completion: nil)
+//                
+//            }
+//        }
+        
+        
     }
     
    
