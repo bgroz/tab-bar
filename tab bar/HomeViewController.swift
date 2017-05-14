@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  tab bar
-//
-//  Created by Buğra on 28.04.2017.
-//  Copyright © 2017 Buğra Öz. All rights reserved.
-//
 
 import UIKit
 
@@ -15,20 +8,9 @@ class HomeViewController: UIViewController , UITableViewDataSource {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.identifier ?? "" {
-        case ShowLevel1CollectionVC:
-            
-        default:
-            <#code#>
-        }
-    }
     
+    }
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -49,7 +31,8 @@ class HomeViewController: UIViewController , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CategoryRow
-        cell.delegate = self
+//        cell.delegate = self
+        
         return cell
     }
     
@@ -57,19 +40,16 @@ class HomeViewController: UIViewController , UITableViewDataSource {
 
 extension HomeViewController: CategoryRawDelegate {
     
-    func didTapCategoryRaw(for cell: CategoryRow) {
+    func didTapCategoryRaw(for cell: CategoryRow, identifier: String, sections: Int) {
     
         switch  {
-        case <#pattern#>:
-            <#code#>
+        case 0:
+            self.performSegue(withIdentifier: identifier, sender: nil)
         default:
-            <#code#>
+            return
         }
-        self.performSegue(withIdentifier: "ShowLevel1CollectionVC", sender: nil)
         
-        self.performSegue(withIdentifier: "ShowLevel2CollectionVC", sender: nil)
-        
-        
+
     }
 }
 

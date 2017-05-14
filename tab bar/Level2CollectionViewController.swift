@@ -84,7 +84,7 @@ extension Level2CollectionViewController {
         labelQuestion?.textColor = .white
         labelQuestion?.font = .systemFont(ofSize: 14)
         labelQuestion?.center.x = view.center.x
-        labelQuestion?.center.y = view.center.y - 200
+        labelQuestion?.center.y = view.center.y - 150
         labelQuestion?.text = words.first?.question
         labelQuestion?.numberOfLines = 0
         view.addSubview(labelQuestion!)

@@ -43,7 +43,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18m-52-owo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1967" y="2201"/>
+            <point key="canvasLocation" x="-6935" y="2585"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="WCZ-Ye-b54">
@@ -134,12 +134,30 @@
                     <navigationItem key="navigationItem" id="XMV-MY-zVV"/>
                     <connections>
                         <segue destination="bgX-lI-eOk" kind="show" identifier="ShowLevel1CollectionVC" id="0g2-nS-p0e"/>
-                        <segue destination="iTY-vL-VRd" kind="showDetail" identifier="ShowLevel2CollectionVC" id="sG7-Wn-j20"/>
+                        <segue destination="iTY-vL-VRd" kind="show" identifier="ShowLevel2CollectionVC" id="atp-6p-pSv"/>
+                        <segue destination="L38-yb-FON" kind="show" identifier="ShowLevel3CollectionVC" id="q93-ep-zTi"/>
+                        <segue destination="iXn-f1-c73" kind="show" identifier="ShowLevel4CollectionVC" id="qMm-vd-mD6"/>
+                        <segue destination="8eH-0R-cy2" kind="show" identifier="ShowLevel5CollectionVC" id="veJ-cb-zmn"/>
+                        <segue destination="X2w-E6-cCa" kind="show" identifier="ShowELevel1CollectionVC" id="CHj-xK-gVA"/>
+                        <segue destination="XYu-tA-X3c" kind="show" identifier="ShowELevel2CollectionVC" id="EqM-4u-nFM"/>
+                        <segue destination="3yx-1w-cyi" kind="show" identifier="ShowELevel3CollectionVC" id="621-dr-CuD"/>
+                        <segue destination="Zce-hH-idG" kind="show" identifier="ShowELevel4CollectionVC" id="RGk-hV-CqH"/>
+                        <segue destination="ogZ-5N-2XC" kind="show" identifier="ShowELevel5CollectionVC" id="5jK-d8-Tcz"/>
+                        <segue destination="jra-PA-sSe" kind="show" identifier="ShowILevel1CollectionVC" id="BV7-tp-CxG"/>
+                        <segue destination="i1a-Jy-MCj" kind="show" identifier="ShowILevel2CollectionVC" id="OJA-9b-2kI"/>
+                        <segue destination="uKc-ZN-FA9" kind="show" identifier="ShowILevel3CollectionVC" id="tVE-hm-YbW"/>
+                        <segue destination="2XJ-hH-xgW" kind="show" identifier="ShowILevel4CollectionVC" id="2aJ-tV-Ef1"/>
+                        <segue destination="FgR-2O-sLK" kind="show" identifier="ShowILevel5CollectionVC" id="5ZQ-yL-Jz4"/>
+                        <segue destination="Jhp-gB-a5c" kind="show" identifier="ShowALevel1CollectionVC" id="ZDW-JW-q5e"/>
+                        <segue destination="ytl-us-fp7" kind="show" identifier="ShowALevel2CollectionVC" id="SCc-hg-UO8"/>
+                        <segue destination="eUJ-ix-Zad" kind="show" identifier="ShowALevel3CollectionVC" id="V9H-3T-c10"/>
+                        <segue destination="YpD-1F-iFf" kind="show" identifier="ShowALevel4CollectionVC" id="Rg5-kK-taK"/>
+                        <segue destination="78n-qq-B9K" kind="show" identifier="ShowALevel5CollectionVC" id="CZ2-AW-i34"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNL-o9-6ck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1223" y="1438"/>
+            <point key="canvasLocation" x="-3857" y="2830"/>
         </scene>
         <!--Item 3-->
         <scene sceneID="AYo-69-sY5">
@@ -181,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sz6-5d-T2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-375" y="1438"/>
+            <point key="canvasLocation" x="3305" y="2914"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="kV1-Bu-OxE">
@@ -243,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eue-yt-68M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="2200.7496251874063"/>
+            <point key="canvasLocation" x="3305" y="3753"/>
         </scene>
         <!--Item 4-->
         <scene sceneID="tCl-aY-tbZ">
@@ -263,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="boA-Tv-eKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="618"/>
+            <point key="canvasLocation" x="4231" y="2175"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Qg6-vT-9l0">
@@ -283,7 +301,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xls-Nq-TDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-374" y="-142"/>
+            <point key="canvasLocation" x="2738" y="1140"/>
         </scene>
         <!--Home-->
         <scene sceneID="poT-wG-teH">
@@ -302,7 +320,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGk-Hl-RMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1223" y="619"/>
+            <point key="canvasLocation" x="2263" y="2175"/>
         </scene>
         <!--Account-->
         <scene sceneID="6Ld-O8-3NS">
@@ -321,7 +339,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJI-D6-N1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-375" y="618"/>
+            <point key="canvasLocation" x="3306" y="2175"/>
         </scene>
         <!--Level2 Collection View Controller-->
         <scene sceneID="98g-nD-NHZ">
@@ -356,7 +374,637 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n1T-29-374" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1094" y="2201"/>
+            <point key="canvasLocation" x="-6370" y="1924"/>
+        </scene>
+        <!--Level3 Collection View Controller-->
+        <scene sceneID="WLX-7s-1oa">
+            <objects>
+                <collectionViewController id="L38-yb-FON" customClass="Level3CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="OVV-S7-8Wc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="TsS-mk-je6">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zef-2L-n5Y">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="L38-yb-FON" id="cSH-Sz-SJ5"/>
+                            <outlet property="delegate" destination="L38-yb-FON" id="DVX-lI-P5Z"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="XRp-ae-ADh"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tRf-20-ZmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5583" y="1576"/>
+        </scene>
+        <!--Level4 Collection View Controller-->
+        <scene sceneID="zqp-wO-f3B">
+            <objects>
+                <collectionViewController id="iXn-f1-c73" customClass="Level4CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="Gd4-Fg-JuD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="vzt-AH-cqI">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3in-kb-Bhm">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="iXn-f1-c73" id="ShZ-Ra-8H9"/>
+                            <outlet property="delegate" destination="iXn-f1-c73" id="cNE-zn-7Pl"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="KgX-KO-L8P"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TcD-cR-Kmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4825" y="1364"/>
+        </scene>
+        <!--Level5 Collection View Controller-->
+        <scene sceneID="riY-Hx-pMY">
+            <objects>
+                <collectionViewController id="8eH-0R-cy2" customClass="Level5CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="ZcE-nh-gL5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2dw-Nu-2Sh">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Gsu-92-v3A">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="8eH-0R-cy2" id="yoI-LA-fr1"/>
+                            <outlet property="delegate" destination="8eH-0R-cy2" id="WwY-El-ZeH"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="VeZ-54-0sA"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Dt-eJ-O1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4014" y="1281"/>
+        </scene>
+        <!--Level1 Collection View Controller-->
+        <scene sceneID="jou-8D-puV">
+            <objects>
+                <collectionViewController id="X2w-E6-cCa" customClass="ELevel1CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="8iO-aC-7rX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="DZt-ER-iCH">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9sN-kW-dWq">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="X2w-E6-cCa" id="l7y-vl-a45"/>
+                            <outlet property="delegate" destination="X2w-E6-cCa" id="Apj-yy-UT6"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="WZS-n3-INF"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWx-Ce-faT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6935" y="3317"/>
+        </scene>
+        <!--Level2 Collection View Controller-->
+        <scene sceneID="NOc-jZ-mN7">
+            <objects>
+                <collectionViewController id="XYu-tA-X3c" customClass="ELevel2CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="eFD-SB-6hT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="mcc-mq-Quh">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UkI-qc-OeH">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="XYu-tA-X3c" id="UQP-lt-ukS"/>
+                            <outlet property="delegate" destination="XYu-tA-X3c" id="DFT-fa-rzL"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="719-zH-uMO"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQC-gI-zVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6370" y="3988"/>
+        </scene>
+        <!--Level3 Collection View Controller-->
+        <scene sceneID="ngM-Yj-o1v">
+            <objects>
+                <collectionViewController id="3yx-1w-cyi" customClass="ELevel3CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="SRZ-f7-aff">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6Ap-yf-iyg">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uQW-lc-lAa">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="3yx-1w-cyi" id="cCZ-qU-q2y"/>
+                            <outlet property="delegate" destination="3yx-1w-cyi" id="HmB-89-XUJ"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="4t0-Jt-9sF"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mx7-jK-Jng" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5583" y="4219"/>
+        </scene>
+        <!--Level4 Collection View Controller-->
+        <scene sceneID="MGZ-m4-xjg">
+            <objects>
+                <collectionViewController id="Zce-hH-idG" customClass="ELevel4CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="G8q-sH-f9e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="lRo-zu-lGU">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="l3b-B3-2MR">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Zce-hH-idG" id="u8m-hf-AQR"/>
+                            <outlet property="delegate" destination="Zce-hH-idG" id="pBE-n6-ztL"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="wvw-Vv-bfP"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mAM-vz-3we" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4826" y="4359"/>
+        </scene>
+        <!--Level5 Collection View Controller-->
+        <scene sceneID="kdR-Rw-IHM">
+            <objects>
+                <collectionViewController id="ogZ-5N-2XC" customClass="ELevel5CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="If9-1Y-ddR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Si5-BN-tGI">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2EK-Td-5yL">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ogZ-5N-2XC" id="Iz7-RP-7Mr"/>
+                            <outlet property="delegate" destination="ogZ-5N-2XC" id="vYR-x4-RPr"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="fht-lR-P2x"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwo-pZ-6gU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4095" y="4496"/>
+        </scene>
+        <!--Level1 Collection View Controller-->
+        <scene sceneID="oXJ-Nu-Alm">
+            <objects>
+                <collectionViewController id="jra-PA-sSe" customClass="ILevel1CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="O6l-Xo-uUI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="yJx-cP-y17">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LeV-Iy-QO9">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="jra-PA-sSe" id="xpk-tz-8K7"/>
+                            <outlet property="delegate" destination="jra-PA-sSe" id="U9W-q2-xEL"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="eLq-je-pbX"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4z-eB-3B5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3305" y="4496"/>
+        </scene>
+        <!--Level2 Collection View Controller-->
+        <scene sceneID="GsN-uD-G5p">
+            <objects>
+                <collectionViewController id="i1a-Jy-MCj" customClass="ILevel2CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="vc7-Ry-fQ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="cqh-lB-FPU">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="17s-tn-eSf">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="i1a-Jy-MCj" id="WSb-nv-Ybk"/>
+                            <outlet property="delegate" destination="i1a-Jy-MCj" id="CAV-OG-ymw"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Azp-9p-PEZ"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKH-S8-xQE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2599" y="4359"/>
+        </scene>
+        <!--Level3 Collection View Controller-->
+        <scene sceneID="JKk-7F-ZnU">
+            <objects>
+                <collectionViewController id="uKc-ZN-FA9" customClass="ILevel3CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="Zry-2O-PBh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2Ry-AP-sy1">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rlT-8l-7q0">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="uKc-ZN-FA9" id="COQ-yd-7aq"/>
+                            <outlet property="delegate" destination="uKc-ZN-FA9" id="0cJ-II-6Us"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="0Si-5A-ycw"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KuW-Ac-7aH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1886" y="4218"/>
+        </scene>
+        <!--Level4 Collection View Controller-->
+        <scene sceneID="Ib7-Ng-eeY">
+            <objects>
+                <collectionViewController id="2XJ-hH-xgW" customClass="ILevel4CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="7nq-g0-sle">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="U4A-50-QZ1">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Q3U-8Z-Byd">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="2XJ-hH-xgW" id="HMO-Aa-bxP"/>
+                            <outlet property="delegate" destination="2XJ-hH-xgW" id="2zC-b0-5bz"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="YMX-da-1Ck"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QfB-GD-Pxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1223" y="3987"/>
+        </scene>
+        <!--Level5 Collection View Controller-->
+        <scene sceneID="ERn-gm-qFk">
+            <objects>
+                <collectionViewController id="FgR-2O-sLK" customClass="ILevel5CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="5Us-F1-y8Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="qKS-qD-YSh">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vyA-Ko-1Az">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="FgR-2O-sLK" id="LSP-r6-Uex"/>
+                            <outlet property="delegate" destination="FgR-2O-sLK" id="Eme-7O-n8C"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="KgY-zT-0sk"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13A-FS-jeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1074" y="3316"/>
+        </scene>
+        <!--Level1 Collection View Controller-->
+        <scene sceneID="lZu-CO-bOT">
+            <objects>
+                <collectionViewController id="Jhp-gB-a5c" customClass="ALevel1CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="lrx-NF-fB9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="N7D-FL-suU">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="30s-c9-L0Y">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Jhp-gB-a5c" id="Vvz-FN-YEf"/>
+                            <outlet property="delegate" destination="Jhp-gB-a5c" id="hYb-20-DXp"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="6IA-gN-td4"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M6B-uB-10c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1074" y="2628"/>
+        </scene>
+        <!--Level2 Collection View Controller-->
+        <scene sceneID="pSU-Ec-xB8">
+            <objects>
+                <collectionViewController id="ytl-us-fp7" customClass="ALevel2CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="Amd-xO-HIc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="xdW-Z3-bOW">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xEh-9N-r8t">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ytl-us-fp7" id="im0-Ad-1V6"/>
+                            <outlet property="delegate" destination="ytl-us-fp7" id="Teg-5d-hhx"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="fvh-xr-ZDJ"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJb-8T-Cep" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1223" y="1924"/>
+        </scene>
+        <!--Level3 Collection View Controller-->
+        <scene sceneID="xaC-HL-boy">
+            <objects>
+                <collectionViewController id="eUJ-ix-Zad" customClass="ALevel3CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="3e3-6x-INy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ilq-Cz-dqh">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lBw-5v-4kF">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="eUJ-ix-Zad" id="HKz-fg-46Q"/>
+                            <outlet property="delegate" destination="eUJ-ix-Zad" id="1mz-WU-eFi"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="4kP-82-rfJ"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92X-PJ-NfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1887" y="1576"/>
+        </scene>
+        <!--Level4 Collection View Controller-->
+        <scene sceneID="GW0-dR-npX">
+            <objects>
+                <collectionViewController id="YpD-1F-iFf" customClass="ALevel4CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="VJL-Av-8qf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="e6j-Px-AVF">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ja2-ob-rYe">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="YpD-1F-iFf" id="OF3-JF-cJc"/>
+                            <outlet property="delegate" destination="YpD-1F-iFf" id="0Xm-Pw-aGd"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="7zo-4Q-RJH"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHu-9L-N4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2550" y="1363"/>
+        </scene>
+        <!--Level5 Collection View Controller-->
+        <scene sceneID="GUD-f0-Fum">
+            <objects>
+                <collectionViewController id="78n-qq-B9K" customClass="ALevel5CollectionViewController" customModule="tab_bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" dataMode="prototypes" id="rDE-ds-nr8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="joZ-5M-BJi">
+                            <size key="itemSize" width="30" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="z0F-Bg-eFI">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="78n-qq-B9K" id="NNP-Jb-te8"/>
+                            <outlet property="delegate" destination="78n-qq-B9K" id="lhY-W6-mw2"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Oaa-Vf-Ggt"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NuQ-bk-8Ll" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3306" y="1281"/>
         </scene>
     </scenes>
     <resources>
