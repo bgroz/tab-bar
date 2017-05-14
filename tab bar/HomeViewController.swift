@@ -12,14 +12,21 @@ import UIKit
 class HomeViewController: UIViewController , UITableViewDataSource {
     
     var categories = ["Beginner", "Elementary", "Intermadiate", "Advanced"]
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         
-        let navigationBar = UINavigationBar()
-        navigationBar.topItem?.title = "New Title"
-        
-        
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier ?? "" {
+        case ShowLevel1CollectionVC:
+            
+        default:
+            <#code#>
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,8 +56,20 @@ class HomeViewController: UIViewController , UITableViewDataSource {
 }
 
 extension HomeViewController: CategoryRawDelegate {
+    
     func didTapCategoryRaw(for cell: CategoryRow) {
+    
+        switch  {
+        case <#pattern#>:
+            <#code#>
+        default:
+            <#code#>
+        }
         self.performSegue(withIdentifier: "ShowLevel1CollectionVC", sender: nil)
+        
+        self.performSegue(withIdentifier: "ShowLevel2CollectionVC", sender: nil)
+        
+        
     }
 }
 

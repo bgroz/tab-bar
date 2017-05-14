@@ -1,6 +1,4 @@
-//
-//  Level1CollectionViewController.swift
-//  tab bar
+
 //
 //  Created by Buğra on 6.05.2017.
 //  Copyright © 2017 Buğra Öz. All rights reserved.
@@ -10,7 +8,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class Level1CollectionViewController: UICollectionViewController , UITextFieldDelegate {
+class Level2CollectionViewController: UICollectionViewController , UITextFieldDelegate {
     
     var words: [WordModel] = []
     var currentWord: String?
@@ -44,11 +42,11 @@ class Level1CollectionViewController: UICollectionViewController , UITextFieldDe
         
         configureViews()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(Level1CollectionViewController.didTapNext))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(Level2CollectionViewController.didTapNext))
         
         self.collectionView?.dataSource = self
         self.collectionView?.delegate = self
-        self.collectionView?.backgroundColor = .gray
+        self.collectionView?.backgroundColor = .black
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         self.collectionView?.reloadData()
     }
@@ -77,7 +75,7 @@ class Level1CollectionViewController: UICollectionViewController , UITextFieldDe
     }
 }
 
-extension Level1CollectionViewController {
+extension Level2CollectionViewController {
     fileprivate func configureViews() {
         let screenWidth = UIApplication.shared.keyWindow?.bounds.size.width ?? 0
         
@@ -101,7 +99,7 @@ extension Level1CollectionViewController {
         buttonCompare = UIButton(frame: CGRect(x: 30, y: 0, width: screenWidth - 60, height: 45))
         buttonCompare?.backgroundColor = .blue
         buttonCompare?.setTitle("Check it", for: .normal)
-        buttonCompare?.addTarget(self, action: #selector(Level1CollectionViewController.didTapCompareButton), for: .touchUpInside)
+        buttonCompare?.addTarget(self, action: #selector(Level2CollectionViewController.didTapCompareButton), for: .touchUpInside)
         buttonCompare?.center.x = view.center.x
         buttonCompare?.center.y = view.center.y
         view.addSubview(buttonCompare!)
@@ -151,7 +149,7 @@ extension Level1CollectionViewController {
             var result = resultText
             result += textField.text ?? ""
             return result
-        }.lowercased()
+            }.lowercased()
         
         if resultText == (resultTextField?.text)?.lowercased() {
             let alertController = UIAlertController(title: "Congrats!", message: "Correct answer 👏", preferredStyle: .alert)

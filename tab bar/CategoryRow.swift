@@ -30,7 +30,7 @@ extension CategoryRow: UICollectionViewDataSource , UICollectionViewDelegateFlow
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! CustonCollectionCell
         cell.layer.borderWidth = 1.0
-        cell.CustomImageView.image = UIImage(named: images[indexPath.row])
+//        cell.CustomImageView.image = UIImage(named: images[indexPath.row])
         
         
         
@@ -40,10 +40,7 @@ extension CategoryRow: UICollectionViewDataSource , UICollectionViewDelegateFlow
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let itemsPerRow:CGFloat = 4
-//        let hardCodePadding:CGFloat = 5
-//        let itemWidth = (collectionView.bounds.width / itemsPerRow) - hardCodePadding
-//        let itemHeight = collectionView.bounds.height - (2 * hardCodePadding)
+
         return CGSize(width: 200, height: 200)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -53,13 +50,7 @@ extension CategoryRow: UICollectionViewDataSource , UICollectionViewDelegateFlow
         delegate?.didTapCategoryRaw(for: self)
         
         
-//        if  cell.CustomImageView.image == #imageLiteral(resourceName: "L1"){
-//            if let vc3 = UIStoryboard.init(name:"Main" ,bundle:nil).instantiateViewController(withIdentifier: "LevelVC") as? Level1CollectionViewController{
-//            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//            appDelegate.window?.rootViewController!.present(vc3 , animated:  true, completion: nil)
-//                
-//            }
-//        }
+
         
         
     }
